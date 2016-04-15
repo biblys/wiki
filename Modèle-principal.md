@@ -11,3 +11,30 @@ C'est le seul modèle à ne pas être au format Twig. Il s'agit de simple HTML, 
 Ainsi qu'une balise facultative, mais souvent utile :
 
 * `{SITE_TITLE}` : le titre du site, souvent inclus dans l'en-tête du site.
+
+Voici un exemple très simple de modèle principal avec les différentes balises :
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{PAGE_TITLE}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {CSS_CALLS}
+    {OPENGRAPH}
+  </head>
+  <body>
+    <div id="menu">
+  	  <!-- Menu -->
+    </div>
+    <div id="content">
+  	  {PAGE_CONTENT}
+    </div>
+    <div id="footer">
+  	  &copy {SITE_TITLE}
+    </div>
+    {JS_CALLS}
+  </body>
+</html>
+```
