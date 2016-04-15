@@ -1,4 +1,4 @@
-L'entité `Article` représente un produit abstrait disponible sur votre site, le plus souvent un livre (à la différence de l'entité `Item` qui représente un objet concret) avec les informations bibliographiques liées.
+L'entité **Article** représente un produit abstrait disponible sur votre site, le plus souvent un livre (à la différence de l'entité [[Item]] qui représente un objet concret) avec les informations bibliographiques liées.
 
 ## Propriétés
 
