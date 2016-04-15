@@ -12,5 +12,5 @@ L'entité **Item** représente un objet concret, comme un exemplaire physique da
 Retourne le code HTML du bouton d'ajout au panier pour cet exemplaire. L'argument `text` permet de préciser le texte du bouton (par défaut, il y a juste une icône).
 
 ```twig
-{{ item.getCartButton('Ajouter au panier') }}
+{{ item.getCartButton('Ajouter au panier')|raw }}
 ```
