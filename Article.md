@@ -23,6 +23,17 @@ Permet de tester la présence de la propriété `property` pour cet article.
 {% endif %}
 ```
 
+### article.hasCover()
+
+Permet de tester la présence d'une image de couverture pour cet article.
+Retourne un booléan (`true` ou `false`).
+
+```twig
+{% if article.hasCover() %}
+  {{ article.getCoverTag()|raw }}
+{% endif %}
+```
+
 ### article.getCoverTag(options)
 
 Retourne la couverture de l'article sous la forme d'une balise HTML (image et lien vers l'image haute résolution). L'argument options est un tableau qui peut prendre les propriété suivantes :
