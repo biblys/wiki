@@ -30,11 +30,12 @@ Ces variables sont facultatives, mais souvent utiles :
     {OPENGRAPH}
   </head>
   <body>
-  	<div id="header">
+    <div id="header">
       {SITE_TITLE}
     </div>
     <div id="menu">
   	  <!-- Menu -->
+      {cart_oneline}
     </div>
     <div id="content">
   	  {PAGE_CONTENT}
