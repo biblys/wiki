@@ -4,7 +4,7 @@ Bienvenue sur le wiki Biblys
 
 ### Modèles
 
-* [[Modèle global]]
+* [[Modèle principal]]
 * [[Fiche article]]
 * [[Liste d'articles]]
 
