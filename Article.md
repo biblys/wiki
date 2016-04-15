@@ -6,13 +6,13 @@ L'entité **Article** représente un produit abstrait disponible sur votre site,
 * `article.contents` : le sommaire de couverture (format HTML)
 * `article.ean` : le code EAN (sans tiret)
 * `article.id` : l'identifiant unique du livre dans la base
-* `article.isbn`: le code ISBN pour un livre (au format ISBN-13)
+* `article.isbn` : le code ISBN pour un livre (au format ISBN-13)
 * `article.summary` : la quatrième de couverture du livre (format HTML)
 * `article.title` : le titre de l'article
 
 ## Méthodes
 
-### `article.has(property)`
+### article.has(property)
 
 Permet de tester la présence de la propriété `property` pour cet article.
 
@@ -21,4 +21,27 @@ Permet de tester la présence de la propriété `property` pour cet article.
 	<h2>Résumé du livre</h2>
 	{{ article.summary }}
 {% endif %}
+```
+
+### article.getCoverTag(options)
+
+Retourne la couverture de l'article sous la forme d'une balise HTML (image et lien vers l'image haute résolution). L'argument options est un tableau qui peut prendre les propriété suivantes :
+
+* `class` : la valeur de l'attribut `class` de la balise image (par défaut : aucun)
+* `rel` : la valeur de l'attribut `rel` du lien (par défaut : aucun)
+* `link` : l'url vers laquelle doit pointer le lien (par défaut : l'image en haute résolution)
+* `size` la taille de l'image sous la forme `wXXX` pour fixer la largeur ou `hXXX` pour la hauteur (par défaut : pleine résolution).
+
+Exemple :
+
+```twig
+article.getCoverTag({ class: 'cover', rel: 'lightbox', size: 'w300' });
+```
+
+générera le code HTML suivant :
+
+```html
+<a href="http://media.biblys.fr/book/05/13005.jpg" rel="lightbox">
+  <img src="http://media.biblys.fr/book/05/13005-w300.jpg" class="cover" alt="Titre du livre">
+</a>
 ```
