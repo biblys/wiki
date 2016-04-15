@@ -1,10 +1,10 @@
 La fiche article représente un produit en vente sur votre site (livre papier, numérique, CD, DVD, etc.). Elle présente en général les données bibliographiques (titre, auteur, éditeur, couverture, résumé, extrait), les exemplaires associés et un bouton d'ajout au panier.
 
-Variables :
+## Variables
 
 * `article` : l'entité [[Article]] de la page courante
 
-Exemple de fiche article :
+## Exemple
 
 ```twig
 <h1>{{ article.title }}</h1>
