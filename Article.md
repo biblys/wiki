@@ -43,8 +43,6 @@ Retourne la couverture de l'article sous la forme d'une balise HTML (image et li
 * `link` : l'url vers laquelle doit pointer le lien (par défaut : l'image en haute résolution)
 * `size` la taille de l'image sous la forme `wXXX` pour fixer la largeur ou `hXXX` pour la hauteur (par défaut : pleine résolution).
 
-Exemple :
-
 ```twig
 article.getCoverTag({ class: 'cover', rel: 'lightbox', size: 'w300' });
 ```
@@ -55,4 +53,25 @@ générera le code HTML suivant :
 <a href="http://media.biblys.fr/book/05/13005.jpg" rel="lightbox">
   <img src="http://media.biblys.fr/book/05/13005-w300.jpg" class="cover" alt="Titre du livre">
 </a>
+```
+
+### article.getAvailableItems()
+
+Retourne un tableau d'entité [[Item]] représentant les exemplaires en stock pour cet article.
+
+```twig
+{% for item in article.getAvailableItems() %}
+  {{ item.getCartButton('Ajouter au panier')|raw }}
+  {{ item.selling_price|currency(true)|raw }}
+{% endfor %}
+```
+
+### article.getCheapestAvailableItem()
+
+Retourne une unique entité [[Item]] représentant l'exemplaire en stock le moins cher.
+
+```twig
+{% set item = article.getCheapestAvailableItem() %}
+{{ item.getCartButton('Ajouter au panier')|raw }}
+{{ item.selling_price|currency(true)|raw }}
 ```
