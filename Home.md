@@ -2,6 +2,8 @@ Bienvenue sur le wiki Biblys
 
 ## Personnaliser Biblys
 
+* [[Options du site]]
+
 ### Modèles
 
 * [[Modèle principal]]
