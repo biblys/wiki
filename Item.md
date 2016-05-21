@@ -26,4 +26,5 @@ Retourne `true` si l'exemplaire est disponible, `false` sinon. Un exemplaire est
 * de date de vente
 * de date de retour
 * de date de perte
+
 Un exemplaire dans un panier VPC est considéré comme disponible, tandis un exemplaire dans un panier caisse ne l'est pas.
