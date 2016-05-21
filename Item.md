@@ -2,8 +2,13 @@ L'entité **Item** représente un objet concret, comme un exemplaire physique da
 
 ## Propriétés
 
-* `item.id` : l'identifiant unique de l'item dans la base
-* `item.selling_price` : le prix de vente TTC en centimes
+* `item.condition` : état de l'exemplaire d'occasion
+* `item.condition_details` : précisions sur l'état
+* `item.id` : identifiant unique de l'exemplaire dans la base
+* `item.pub_year` : année de parution (dépot légal)
+* `item.selling_price` : prix de vente TTC en centimes
+* `item.stockage` : emplacement
+* `item.weight` : poids en grammes
 
 ## Méthodes
 
@@ -14,3 +19,11 @@ Retourne le code HTML du bouton d'ajout au panier pour cet exemplaire. L'argumen
 ```twig
 {{ item.getCartButton('Ajouter au panier')|raw }}
 ```
+
+### item.isAvailable()
+
+Retourne `true` si l'exemplaire est disponible, `false` sinon. Un exemplaire est considéré disponible s'il a une date d'achat dans le passé et s'il n'a pas :
+* de date de vente
+* de date de retour
+* de date de perte
+Un exemplaire dans un panier VPC est considéré comme disponible, tandis un exemplaire dans un panier caisse ne l'est pas.
