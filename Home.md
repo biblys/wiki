@@ -7,6 +7,8 @@ Bienvenue sur le wiki Biblys
 ### Modèles
 
 * [[Modèle principal]]
+* [[Page d'accueil]]
+* [[Page d'accueil (derniers billets)]]
 * [[Fiche article]]
 * [[Liste d'articles]]
 
