@@ -21,6 +21,9 @@ Valeurs acceptées :
 * `page:{id}` : affiche la page statique {id}
 * `old_controller` : utiliser l'ancien controleur 
 
+### isbn_checker_start (default: null)
+Permet de définir la valeur de départ pour le générateur d'ISBN libres du catalogue éditeur. Doit être un code EAN à 13 chiffres sans tiret.
+
 ### minimum_virtual_stock (default: 3)
 Nombre de livres en stock en dessous duquel une ligne apparaîtra en rouge sur
 la page de gestion du stock virtuel.
