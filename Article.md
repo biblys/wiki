@@ -75,3 +75,14 @@ Retourne une unique entité [[Item]] représentant l'exemplaire en stock le moin
 {{ item.getCartButton('Ajouter au panier')|raw }}
 {{ item.selling_price|currency(true)|raw }}
 ```
+
+### Disponibilité des articles
+
+Ces fonctions retournent `true` ou `false` selon la disponibilité d'un article.
+
+* `isAvailable()` : `true` si **01 - Disponible** ou **09 - Bientôt épuisé**
+* `isComingSoon()`: `true` si **01** ou **09** et que la date de parution est dans le futur, ou si **02 - Pas encore paru**
+* `isToBeReprinted()` : `true` si **03 - Réimpression en cours**
+* `isSoldOut()` : `true` si **06 - Arrêt définitif de commercialisation**
+* `isSoonUnavailable()` : `true` si **09 - Bientôt épuisé**
+* `isPrivatelyPrinted()` : `true` si **10 - Hors commerce**
