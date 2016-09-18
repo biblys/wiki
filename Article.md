@@ -7,8 +7,17 @@ L'entité **Article** représente un produit abstrait disponible sur votre site,
 * `article.ean` : le code EAN (sans tiret)
 * `article.id` : l'identifiant unique du livre dans la base
 * `article.isbn` : le code ISBN pour un livre (au format ISBN-13)
+* `article.price` : le prix de l'article en centimes (voir Prix d'un article)
 * `article.summary` : la quatrième de couverture du livre (format HTML)
 * `article.title` : le titre de l'article
+
+### Prix d'un article
+
+Par défaut, le prix d'un article est enregistré en base et affiché sous la forme d'un entier en centimes. Pour afficher un prix correctement formaté à deux décimales, incluant la devise, on peut utiliser le code suivant :
+
+```twig
+article.price|price('EUR')|raw
+```
 
 ## Méthodes
 
