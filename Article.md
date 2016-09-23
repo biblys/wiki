@@ -9,6 +9,7 @@ L'entité **Article** représente un produit abstrait disponible sur votre site,
 * `article.isbn` : le code ISBN pour un livre (au format ISBN-13)
 * `article.price` : le prix de l'article en centimes (voir Prix d'un article)
 * `article.summary` : la quatrième de couverture du livre (format HTML)
+* `article.tags` : les mots-clés associés à l'article (tableau)
 * `article.title` : le titre de l'article
 
 ### Prix d'un article
@@ -41,6 +42,23 @@ Retourne un booléan (`true` ou `false`).
 {% if article.hasCover() %}
   {{ article.getCoverTag()|raw }}
 {% endif %}
+```
+
+### article.hasDownloadableFiles(type)
+
+Permet de tester la présence de fichier téléchargeables associés à l'article. Par défaut, renvoie `true` ou `false` si n'importe quel type de fichier est présent, mais il est possible de filtrer le test avec le paramètre `type` qui peut prendre la valeur `free` pour les fichiers public ou `paid` pour les fichiers restreints.
+
+```twig
+    {% if article.hasDownloadableFiles('free') %}
+      <p>
+        Extraits
+      <p>
+      <p id="files">
+          {% for file in article.getDownloadableFiles('free') %}
+              <a href="{{ file.getUrl() }}" class="btn btn-default btn-sm"><i class="fa fa-file"></i> {{ file.getType('name') }}</a>
+          {% endfor %}
+        </p>
+    {% endif %}
 ```
 
 ### article.getCoverTag(options)
