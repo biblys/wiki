@@ -39,6 +39,9 @@ de la validation de la commande.
 ### show_elibrary (default: 0)
 Afficher le lien vers "ma bibliothèque" dans le menu Axys
 
+### special_offer_amount (default: 0) / special_offer_article (default: null)
+Ces deux options permettent de créer une offre promotionnelle, valable uniquement pour l'achat d'articles physiques. Si le montant total des articles dans le panier de l'utilisateur est supérieur ou égale à `special_offer_amount`, l'article dont l'identifiant correspond à `special_offer_article` sera ajouté à la commande. 
+
 ### virtual_stock (default: 0)
 Active le mode stock virtuel : un exemplaire est créé automatiquement si
 aucun n'est disponible lors de l'ajout d'un article physique dans un panier.
