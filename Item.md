@@ -20,6 +20,10 @@ Retourne le code HTML du bouton d'ajout au panier pour cet exemplaire. L'argumen
 {{ item.getCartButton('Ajouter au panier')|raw }}
 ```
 
+### item.hasCover()
+
+Retourne `true` si l'exemple a une image associée.
+
 ### item.isAvailable()
 
 Retourne `true` si l'exemplaire est disponible, `false` sinon. Un exemplaire est considéré disponible s'il a une date d'achat dans le passé et s'il n'a pas :
