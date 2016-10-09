@@ -28,6 +28,9 @@ Permet de définir la valeur de départ pour le générateur d'ISBN libres du ca
 Nombre de livres en stock en dessous duquel une ligne apparaîtra en rouge sur
 la page de gestion du stock virtuel.
 
+### publisher_filter (default: null)
+Permet de n'afficher sur le site que les articles associés à un ou plusieurs éditeurs en entrant leurs identifiants, séparés par des virgules.
+
 ### newsletter (default: 0)
 Si la valeur est 1, l'abonnement à la newsletter est proposé au moment de
 l'enregistrement d'une nouvelle commande.
