@@ -1,6 +1,9 @@
 ### active_stock (default: null)
 Permet de définir le ou les emplacement(s) de stock actif(s). Si une valeur est entrée, seul les exemplaires dont l'emplacement est égale à cette valeur sont disponibles. Il est possible de préciser plusieurs emplacements séparés par une virgule.
 
+### articles_per_page (default: 10)
+Nombre d'articles à afficher par page.
+
 ### cgv_page (default: null)
 Identifiant de la page des Conditions Générales de Vente. Si cette option est précisé, une case à cocher "Je reconnais avoir pris connaissance des conditions de vente" est affichée avec un lien pointant vers cette page, et devra être obligatoirement cochée pour pouvoir enregistrer une commande.
 
