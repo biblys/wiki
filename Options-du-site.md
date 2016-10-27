@@ -34,6 +34,9 @@ la page de gestion du stock virtuel.
 ### publisher_filter (default: null)
 Permet de n'afficher sur le site que les articles associés à un ou plusieurs éditeurs en entrant leurs identifiants, séparés par des virgules.
 
+### name_for_check_payment (default: site_title)
+Nom à l'afficher pour l'ordre des chèques sur la page de paiement. Si le paramètre n'est pas spécifié, le nom du site sera utilisé.
+
 ### newsletter (default: 0)
 Si la valeur est 1, l'abonnement à la newsletter est proposé au moment de
 l'enregistrement d'une nouvelle commande.
