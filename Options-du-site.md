@@ -54,3 +54,6 @@ Ces deux options permettent de créer une offre promotionnelle, valable uniqueme
 ### virtual_stock (default: 0)
 Active le mode stock virtuel : un exemplaire est créé automatiquement si
 aucun n'est disponible lors de l'ajout d'un article physique dans un panier.
+
+### weight_required (default: 0)
+Si ce paramètre est spécifié, un exemplaire ne pourra pas être créé avec un poids inférieur à sa valeur.
