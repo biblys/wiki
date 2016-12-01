@@ -1,6 +1,9 @@
 ### active_stock (default: null)
 Permet de définir le ou les emplacement(s) de stock actif(s). Si une valeur est entrée, seul les exemplaires dont l'emplacement est égale à cette valeur sont disponibles. Il est possible de préciser plusieurs emplacements séparés par une virgule.
 
+### admin_entries (defaut: null)
+Permet d'ajouter des entrées dans un menu personnalisé de l'interface d'administration sous la forme [{"name": "Nom de l'entrée", "url": "/pages/page", "icon": "icon"}]
+
 ### articles_per_page (default: 10)
 Nombre d'articles à afficher par page.
 
