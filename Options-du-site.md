@@ -23,6 +23,7 @@ Valeurs acceptées :
 Permet de définir le comportement de la page d'accueil.
 Valeurs acceptées :
 * `custom` : affiche le template home.html.twig
+* `articles` : affiche les cents derniers articles parus
 * `posts` : affiche les dix derniers billets (template: home-posts.html.twig)
 * `page:{id}` : affiche la page statique {id}
 * `old_controller` : utiliser l'ancien controleur
