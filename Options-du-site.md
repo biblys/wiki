@@ -26,6 +26,7 @@ Valeurs acceptées :
 * `articles` : affiche les cents derniers articles parus
 * `posts` : affiche les dix derniers billets (template: home-posts.html.twig)
 * `page:{id}` : affiche la page statique {id}
+* `rayon:{id}` : affiche les livres du rayon {id}
 * `old_controller` : utiliser l'ancien controleur
 
 ### home_preview_image et home_preview_text (default: null)
