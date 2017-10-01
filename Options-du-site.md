@@ -19,6 +19,9 @@ Valeurs acceptées :
 * `EUR`
 * `FCFA`
 
+### google_analytics_id (default: null)
+Permet d'insérer un code Google Analytics en spécifiant l'ID de propriété.
+
 ### home (default: custom)
 Permet de définir le comportement de la page d'accueil.
 Valeurs acceptées :
