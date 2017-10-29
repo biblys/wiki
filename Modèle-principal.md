@@ -16,6 +16,7 @@ Ces variables sont facultatives, mais souvent utiles :
 
 * `{SITE_TITLE}` : le titre du site, souvent inclus dans l'en-tête du site ou le pied de page.
 * `{cart_oneline}` : l'état du panier de l'utilisateur (nombre d'article et montant total)
+* `{ANALYTICS_TRACKER}` : permet d'insérer le code de suivi Google Analytics si l'option de site `google-analytics-id` est définie
 
 ## Exemple
 
@@ -44,6 +45,7 @@ Ces variables sont facultatives, mais souvent utiles :
   	  &copy {SITE_TITLE}
     </div>
     {JS_CALLS}
+    {ANALYTICS_TRACKER}
   </body>
 </html>
 ```
