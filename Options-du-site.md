@@ -13,6 +13,9 @@ Identifiant de la page des Conditions Générales de Vente. Si cette option est 
 ### closed (default: 0)
 Si la valeur est 1, le site est en maintenance et n'est plus accessible, sauf pour les administrateurs identifiés.
 
+### collection_filter_hide (default: null)
+Permet masquer sur le site que les articles associés à une ou plusieurs collection en entrant leurs identifiants, séparés par des virgules.
+
 ### currency (default: EUR)
 Permet de changer le sigle de la monnaie affichée sur le site.
 Valeurs acceptées :
