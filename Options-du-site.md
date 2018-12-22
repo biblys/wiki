@@ -42,6 +42,9 @@ Valeurs acceptées :
 ### home_preview_image et home_preview_text (default: null)
 Permet de définir une image et un texte qui seront utilisés pour la prévisualisation de la page d'accueil sur les réseaux sociaux (Twitter Cards et Facebook Open Graph).
 
+### invoice_notice (default: null)
+Permet d'ajouter une notice en bas des pages de facture imprimable (par exemple, SIRET ou numéro de TVA). Utilisez `\n` pour ajouter des retours à la ligne.
+
 ### isbn_checker_start (default: null)
 Permet de définir la valeur de départ pour le générateur d'ISBN libres du catalogue éditeur. Doit être un code EAN à 13 chiffres sans tiret.
 
