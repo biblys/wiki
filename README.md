@@ -1,4 +1,2 @@
-# biblys/wiki
+La documentation Biblys a été déplacée [vers un nouveau site](https://docs.biblys.fr/).
 
-Le wiki se trouve maintenant à l'adresse : 
-https://github.com/biblys/wiki/wiki
